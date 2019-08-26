@@ -1,0 +1,88 @@
+#container{
+    background: white;
+    margin: 100px auto;
+    margin-top: 10px;
+    width: 1200px;
+}
+#editor {
+    background: white;
+    box-sizing: border-box;
+    width:100%;
+    padding: 13px 13px 13px 20px;
+    min-height: 550px;
+    margin: 100px auto;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+#message {
+    background: white;
+    box-sizing: border-box;
+    width:100%;
+    padding: 13px 13px 13px 20px;
+    min-height: 0px;
+    margin: 100px auto;
+    text-align: center;
+}
+#password{
+    background: white;
+    box-sizing: border-box;
+    width:100%;
+    padding: 13px 13px 13px 20px;
+    min-height: 150px;
+    margin: 100px auto;
+    box-shadow: 0 0 3px rgba(0,0,0,0.3);
+    
+}
+
+#code{
+    text-align: center;
+    background: #2980b9;
+    color:white;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    font-weight: normal;
+    font-size: 25px;
+    margin: 0;
+}
+#type{
+    float: right;
+}
+#pen{
+    font-size: 0px;
+}
+textarea{
+    box-sizing: border-box;
+    background: #f7f7f7;
+    width:100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
+    color:white;
+    font-size: 20px;
+    resize: none;
+    min-height: 500px;
+}
+
+textarea:focus{
+    border:3px solid #2980b9;
+    outline:none;
+    background-color: white;
+
+}
+
+body{
+    font-family: roboto;
+}
+
+
+
+button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
