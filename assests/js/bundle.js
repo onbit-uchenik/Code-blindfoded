@@ -363,7 +363,7 @@ function run() {
 $('#viewCode').click(function(event){
     if(flag > 0) showCode();
     else {
-        message(`<h3>SORRY ONLY 1 SCREEN TIME IS ALLOWED</h3>
+        message(`<h3>SORRY ONLY 2 SCREEN TIME IS ALLOWED</h3>
           <span><i class="fa fa-frown-o" aria-hidden="true"></i></span>`);
     }
     event.stopPropagation();
