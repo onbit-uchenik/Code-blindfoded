@@ -321,11 +321,14 @@ function isSlowBuffer (obj) {
 'use strict'
 
 function run() {
+    let x = [];
     let str="";
     let flag = 2;
     let pass="e5044c899e1bc16ad60dc61d21bfb038";
     const md5 = require('md5');
     $('textarea').keyup(function (event) {
+        console.log(str);
+        console.log(x);
         addCode($(this).val(),event.which);
         $(this).val('');
         $('#pen').css({
@@ -383,11 +386,21 @@ function showCode() {
     },3000);
 }
     $('#submit').click(function(event) {
-
-        $('#editor').remove();
+        x.push(str);
+        str = "";
+        //$('#editor').remove();
         message('<h3>YOUR CODE IS SUBMITTED SUCCESSFULLY  <span id="judge"><i class="fa fa-lock" aria-hidden="true"></i></span></h3>');
         //$('#container').append('<div id = "message"> <h3>YOUR CODE IS SUBMITTED SUCCESSFULLY  <span id="judge"><i class="fa fa-lock" aria-hidden="true"></i></span></h3> </div>');
-        
+        $('#heading').text('Theatre Square');
+        $('#question').text(`Theatre Square in the capital city of Berland has a rectangular shape with the size n × m meters. On the occasion of the city's anniversary, a decision was taken to pave the Square with square granite flagstones. Each flagstone is of the size a × a
+         What is the least number of flagstones needed to pave the Square? It's allowed to cover the surface larger than the Theatre Square, but the Square has to be covered. It's not allowed to break the flagstones. The sides of flagstones should be parallel to the sides of the Square`);
+        //console.log($('#question').text()); 
+        $('#one').text('The input contains three positive integer numbers in the first line: n,  m and a (1 ≤  n, m, a ≤ 10^9).')
+        $('#two').text('Write the needed number of flagstones.');
+        $('#three').text('6 6 4');
+        $('#four').text('4');
+        $('#five').text('6 6 4');
+        $('#six').text('4');
         $('#judge').click(function(event) {
           verification();
         });
@@ -427,7 +440,11 @@ function showCode() {
       console.log(str);
       $('#container').append(`<div id="Solution">
       <h1 id="code">Solution</h1>
-      <pre> ${str} </pre>
+      <h2> HELP ME ! </h2>
+      <pre> ${x[0]} </pre>
+      <br>
+      <h2> Theatre Square </h2>
+      <pre> ${x[1]} </pre>
       </div>`)
     }
 }
